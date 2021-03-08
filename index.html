@@ -11,25 +11,7 @@
         <div id="quote_text"></div>
         <div id="quote_credit"></div>
 
-        <div class="coins">
-          <iframe
-            src='https://www.coingecko.com/en/widget_component/ticker/bitcoin/usd?id=bitcoin'
-            style='border:none; height:90px; width: 275px;'
-            scrolling='no'
-            frameborder='0'
-            allowTransparency='true'
-          >
-          </iframe> 
-
-          <iframe
-            src='https://www.coingecko.com/en/widget_component/ticker/ethereum/usd?id=ethereum'
-            style='border:none; height:90px; width: 275px;'
-            scrolling='no'
-            frameborder='0'
-            allowTransparency='true'
-          >
-          </iframe>
-        </div>
+        <div id="coindata" class="coins"></div>
       </div>
 
       <div class="news">
@@ -41,7 +23,7 @@
 
     </div>
 
-    
+    <script type="text/javascript" src="pricelist.js"></script>
     <script type="text/javascript" src="quotes.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>

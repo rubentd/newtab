@@ -54,3 +54,12 @@ const displayStories = async () => {
 }
 
 displayStories();
+
+// load crypto prices
+
+const loadCrypto = () => {
+  const e = crCryptocoinPriceWidget.init({base:"USD",items:"BTC,ETH",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});
+  document.getElementById('coindata').append(e);
+};
+
+loadCrypto();

@@ -66,6 +66,10 @@ ul > li > span {
   left: 8px;
 }
 
+.coins > div > div:last-child {
+  display: none;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #333;
