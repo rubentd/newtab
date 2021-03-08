@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
+
+body {
+  padding: 16px; 
+}
+
+.quote {
+  font-family: 'Noto Sans JP';
+}
+
+#quote_text {
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+#quote_credit {
+  font-size: 24px;
+  color: #444;
+}

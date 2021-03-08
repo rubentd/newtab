@@ -1,0 +1,50 @@
+window.quotes = [
+  {
+    title: 'Epictetus - The Art of Living',
+    quotes: [
+      'Happiness and freedom begin with a clear understanding of one principle: Some things are within our control, and some things are not.',
+      'Keep your attention focused entirely on what is truly your own concern, and be clear that what belongs to others is their business and none of yours.',
+      'Circumstances do not rise to meet our expectations. Events happen as they do. People behave as they are. Embrace what you actually get',
+      'Open your eyes: See things for what they really are, thereby sparing yourself the pain of false attachments and avoidable devastation',
+      'When something happens, the only thing in your power is your attitude toward it; you can either accept it or resent it',
+      `Events don't hurt us, but our views of them can`,
+      'We cannot choose our external circumstances, but we can always choose how we respond to them.',
+      'Never depend on the admiration of others. There is no strength in it. Personal merit cannot be derived from an external source. It is not to be found in your personal associations, not can it be found in the regard of other people.',
+      `Other people's views and troubles can be contagious. Don't sabotage yourself by unwittingly adopting negative, unproductive attitudes through your associations with others`,
+      `Do you wish to be invincible? Then don't enter into combat with what you have no real control over.`,
+      'Stop aspiring to be anyone other than your own best self: for that does fall within your control.',
+      'Try not to merely react in the moment. Pull back from the situation. Take a wider view; compose yourself.',
+      'Spiritual progress is made through confronting death and calamity',
+      'Instead of averting your eyes from the painful events of life, look at them squarely and contemplate them often. By facing the realities of death, infirmity, loss, and disappointment, you free yourself of illusions and false hopes and you avoid miserable, envious thoughts.',
+      `In trying to please other people, we find ourselves misdirected toward what lies outside our sphere of influence. In doing so we lose our hold on our life's purpose.`,
+      `Content yourself with being a lover of wisdom, a seeker of the truth. Return and return again to what is essential and worthy.`,
+      'Character matters more than reputation',
+      `It's better to be a good person and fulfill your obligations that to have renown and power.`,
+      'Follow through on all your generous impulses. Do not question them, especially if a friend needs you; act on his or her behalf. Do not hesitate!',
+      `Clearly define the person you want to be: Who exactly do you want to be? What kind of person do you want to be? What are your personal ideals? Whom do you admire? What are their special traits that you would make your own?`,
+      `Most of what passes for legitimate entertainment is inferior or foolish and only caters to or exploits people's weaknesses. Avoid being one of the mob who indulges in such pastimes. Your life is too short and you have important things to do.`,
+    ]
+  },
+  {
+    title: 'Naval Ravikant',
+    quotes: [
+      `Don’t take yourself so seriously. You’re just a monkey with a plan.`,
+      `Happiness is what’s there when you remove the sense that something is missing in your life.`,
+      'We crave experiences that will make us be present, but the cravings themselves take us from the present moment.',
+      'Anticipation for our vices pulls us into the future. Eliminating vices makes it easier to be present.',
+      'Desire is a contract you make with yourself to be unhappy until you get what you want.',
+      'Happiness is being satisfied with what you have. Success comes from dissatisfaction. Choose.',
+      'The enemy of peace of mind is expectations drilled into you by society and other people.',
+      'When working, surround yourself with people more successful than you. When playing, surround yourself with people happier than you.',
+      'If you can’t see yourself working with someone for life, don’t work with them for a day. ',
+      'To make an original contribution, you have to be irrationally obsessed with something.',
+      'Meditation is intermittent fasting for the mind.',
+      'Life-hack: When in bed, meditate. Either you will have a deep meditation or fall asleep. Victory either way.',
+      'Insight meditation lets you run your brain in debug mode until you realize you’re just a subroutine in a larger program.',
+      'The hardest thing is not doing what you want—it’s knowing what you want.',
+      'Everyone starts out innocent. Everyone is corrupted. Wisdom is the discarding of vices and the return to virtue, by way of knowledge.',
+      'Inspiration is perishable—act on it immediately.',
+      'Read enough, and you become a connoisseur. Then you naturally gravitate more toward theory, concepts, nonfiction.',
+    ]
+  }
+];

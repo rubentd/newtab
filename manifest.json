@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "New Tab",
+  "version": "1.0",
+  "description": "Quotes, crypto, stocks and news",
+  "author": "Ruben Torres",
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}
