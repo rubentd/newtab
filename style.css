@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
 
 body {
-  padding: 16px; 
+  padding: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .quote {
   font-family: 'Noto Sans JP';
+  padding: 16px;
+  width: 70%;
+}
+
+.news {
+  width: 30%;
+  overflow: scroll;
+  height: 100vh;
+  padding: 0 8px 24px;
+}
+
+.news h4 {
+  color: #ff6600;
 }
 
 #quote_text {
@@ -18,4 +40,51 @@ body {
 #quote_credit {
   font-size: 24px;
   color: #444;
+}
+
+a {
+  color: #333 !important;
+}
+
+ul {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none; 
+}
+
+ul > li {
+  margin-bottom: 16px;
+}
+
+ul > li > span {
+  color: #aaa;
+}
+
+.coins {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #dedede;
+  }
+
+  a {
+    color: #dedede !important;
+  }
+
+  #quote_text {
+    color: #dedede;
+  }
+
+  #quote_credit {
+    color: #aaa;
+  }
+
+  ul > li > span {
+    color: #888;
+  }
 }
