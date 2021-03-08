@@ -16,18 +16,40 @@ body {
 .quote {
   font-family: 'Noto Sans JP';
   padding: 16px;
-  width: 70%;
+  width: 50%;
 }
 
 .news {
-  width: 30%;
+  width: 25%;
   overflow: scroll;
   height: 100vh;
   padding: 0 8px 24px;
 }
 
-.news h4 {
-  color: #ff6600;
+.hackernews-title {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 20px;
+}
+
+.hackernews-title > img {
+  margin-right: 8px;
+  height: 24px;
+}
+
+.decrypt-title {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.decrypt-title > img {
+  height: 28px;
+  margin-right: 8px;
+}
+
+.decrypt-title > img:last-child {
+  height: 16px;
 }
 
 #quote_text {
@@ -54,10 +76,25 @@ ul {
 
 ul > li {
   margin-bottom: 16px;
+  position: relative;
+}
+
+ul > li img {
+  width: 100%;
+  display: block;
 }
 
 ul > li > span {
   color: #aaa;
+}
+
+ul > li > .overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
 }
 
 .coins {

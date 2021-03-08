@@ -55,6 +55,45 @@ const displayStories = async () => {
 
 displayStories();
 
+// load decrypt
+
+const loadDecryptStories = async () => {
+  const res = await window.fetch('https://api.decrypt.co/content/posts?_minimal=true&category=news&lang=en-US&offset=0&order=desc&orderby=date&per_page=12');
+  return await res.json();
+}
+
+const renderDecryptStories = (stories) => {
+  console.log({ stories });
+  document.getElementById('decryptnews').innerHTML = '';
+  for (let story of stories) {
+    document.getElementById('decryptnews').innerHTML += `
+      <li>
+        <a href="${story.link}" target="_blank">
+          <img src="${story.custom_fields.featured_image_url}" alt="${story.custom_fields.featured_image_description}" />
+        </a>
+        <a class="overlay" href="${story.link}" target="_blank">${story.title.rendered}</a>
+      </li>
+    `;
+  }
+}
+
+const displayDecryptStories = async () => {
+  const todayKey = 'decrypt_stories' + new Date().toDateString();
+  console.log(todayKey);
+  let stories = [];
+  const cacheStories = localStorage.getItem(todayKey);
+  if (cacheStories) {
+    stories = JSON.parse(cacheStories);
+  } else {
+    localStorage.clear();
+    const stories = await loadDecryptStories();
+    localStorage.setItem(todayKey, JSON.stringify(stories));
+  }
+  renderDecryptStories(stories);
+}
+
+displayDecryptStories();
+
 // load crypto prices
 
 const loadCrypto = () => {
