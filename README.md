@@ -1,6 +1,6 @@
 # newtab
 
-Chrome extension with daily quotes, news, and crypto prices
+Show daily quotes, news, and crypto prices when you open a new tab.
 
 
 ![Screenshot](screenshot.png)
