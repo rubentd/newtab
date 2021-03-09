@@ -37,7 +37,8 @@ const renderStories = (stories) => {
 const NUMBER_STORIES = 16;
 
 const displayStories = async () => {
-  const todayKey = 'stories' + new Date().toDateString()
+  const date = new Date();
+  const todayKey = 'stories' + date.toDateString() + date.getHours();
   let stories = [];
   const cacheStories = localStorage.getItem(todayKey);
   if (cacheStories) {
@@ -63,7 +64,6 @@ const loadDecryptStories = async () => {
 }
 
 const renderDecryptStories = (stories) => {
-  console.log({ stories });
   document.getElementById('decryptnews').innerHTML = '';
   for (let story of stories) {
     document.getElementById('decryptnews').innerHTML += `
@@ -78,7 +78,8 @@ const renderDecryptStories = (stories) => {
 }
 
 const displayDecryptStories = async () => {
-  const todayKey = 'decrypt_stories' + new Date().toDateString();
+  const date = new Date();
+  const todayKey = 'decrypt_stories' + date.toDateString() + date.getHours();
   console.log(todayKey);
   let stories = [];
   const cacheStories = localStorage.getItem(todayKey);

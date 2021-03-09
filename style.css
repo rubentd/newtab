@@ -128,4 +128,8 @@ ul > li > .overlay {
   ul > li > span {
     color: #888;
   }
+
+  ul > li > .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 }
