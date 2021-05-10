@@ -145,6 +145,7 @@ but will welcome you based on the virtues you have lived by.
 If there are gods, but unjust, then you should not want to worship them.
 If there are no gods, then you will be gone, but will have lived a noble life that will live on in the memories of your loved ones.`,
       'How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself, to make it just and holy.'
+      `Treat what you don't have as non-existent. Look at what you have, the things you value most, and think of how much you'd crave them if you didn't have them. But be careful. Don't feel such satisfaction that you start to overvalue them—that it would upset you to lose them.`,
     ],
   },
 ];
