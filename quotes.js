@@ -114,5 +114,37 @@ window.quotes = [
       'Ways to get lucky: • Hope luck finds you. • Hustle until you stumble into it. • Prepare the mind and be sensitive to chances others miss. • Become the best at what you do. Refine what you do until this is true. Opportunity will seek you out. Luck becomes your destiny. ',
       'Reading science, math, and philosophy one hour per day will likely put you at the upper echelon of human success within seven years.',
     ]
-  }
+  },
+  {
+    title: 'Marcus Aurelius',
+    quotes: [
+      'You have power over your mind - not outside events. Realize this, and you will find strength.',
+      'Dwell on the beauty of life. Watch the stars, and see yourself running with them.',
+      'The happiness of your life depends upon the quality of your thoughts.',
+      'Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.',
+      'Waste no more time arguing about what a good man should be. Be one.',
+      'If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.',
+      'When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love ...',
+      'The best revenge is to be unlike him who performed the injury.',
+      'Accept the things to which fate binds you, and love the people with whom fate brings you together,but do so with all your heart.',
+      'The soul becomes dyed with the colour of its thoughts.',
+      'It is not death that a man should fear, but he should fear never beginning to live.',
+      'Never let the future disturb you. You will meet it, if you have to, with the same weapons of reason which today arm you against the present.',
+      'Our life is what our thoughts make it.',
+      'If someone is able to show me that what I think or do is not right, I will happily change, for I seek the truth, by which no one was ever truly harmed. It is the person who continues in his self-deception and ignorance who is harmed.',
+      'I have often wondered how it is that every man loves himself more than all the rest of men, but yet sets less value on his own opinion of himself than on the opinion of others.',
+      'Whenever you are about to find fault with someone, ask yourself the following question: What fault of mine most nearly resembles the one I am about to criticize?',
+      'If it is not right do not do it; if it is not true do not say it.',
+      'The object of life is not to be on the side of the majority, but to escape finding oneself in the ranks of the insane.',
+      'Very little is needed to make a happy life; it is all within yourself in your way of thinking.',
+      'The best revenge is not to be like your enemy.',
+      'The first rule is to keep an untroubled spirit. The second is to look things in the face and know them for what they are.',
+      'How much more grievous are the consequences of anger than the causes of it.',
+      `Live a good life. If there are gods and they are just, then they will not care how devout you have been, 
+but will welcome you based on the virtues you have lived by. 
+If there are gods, but unjust, then you should not want to worship them.
+If there are no gods, then you will be gone, but will have lived a noble life that will live on in the memories of your loved ones.`,
+      'How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself, to make it just and holy.'
+    ],
+  },
 ];
