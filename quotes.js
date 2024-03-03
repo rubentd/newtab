@@ -1,6 +1,6 @@
 window.quotes = [
   {
-    title: 'Epictetus - The Art of Living',
+    title: 'Epictetus',
     quotes: [
       'Happiness and freedom begin with a clear understanding of one principle: Some things are within our control, and some things are not.',
       'Keep your attention focused entirely on what is truly your own concern, and be clear that what belongs to others is their business and none of yours.',
@@ -146,13 +146,57 @@ If there are gods, but unjust, then you should not want to worship them.
 If there are no gods, then you will be gone, but will have lived a noble life that will live on in the memories of your loved ones.`,
       'How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself, to make it just and holy.',
       `Treat what you don't have as non-existent. Look at what you have, the things you value most, and think of how much you'd crave them if you didn't have them. But be careful. Don't feel such satisfaction that you start to overvalue them—that it would upset you to lose them.`,
+      `When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous and surly. They are like this because they cannot tell good from evil. But I have seen the beauty of good, 
+and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own - not of the same blood or birth, but the same mind, and possessing a share of the divine. And so none of them can hurt me. No one can 
+implicate me in ugliness. Nor can I feel angry at my relative, or hate him. We were born to work together like feet, hands and eyes, like the two rows of teeth, upper 
+and lower. To obstruct each other is unnatural. To feel anger at someone, to turn your back on him: these are obstructions.`,
     ],
   },
   {
     title: 'George Bernard Shaw',
     quotes: [
-      `This is the true joy in life, to be used for a purpose recognized by yourself as a mighty one, to be a force of nature instead of a feverish, selfish little clot of ailments and grievances complaining that the world will not devote itself to making you happy.
-I am of the opinion that my life belongs to the whole community and that as long as I live it is my privilege to do for it whatever I can. I want to be thoroughly used up when I die, for the harder I work the more I live, I rejoice in life for its own sake. Life is no brief candle to me, it is a sort of splendid torch which I\'ve got a hold of for a moment and I want to make it burn as brightly as possible before handing it on to future generations.`
+      `This is the true joy in life, to be used for a purpose recognized by yourself as a mighty one, to be a force of nature instead of a feverish, selfish little clot of ailments and grievances complaining that the world will not devote itself to making you happy.`
     ]
+  },
+  {
+    title: 'Seneca',
+    quotes: [
+      'Life without design is erratic.',
+      'All cruelty springs from weakness.',
+      'Luck is what happens when preparation meets opportunity.',
+      'Begin at once to live, and count each separate day as a separate life.',
+      `True happiness is to enjoy the present, without anxious dependence upon the future, not to amuse ourselves with either hopes or fears but to rest satisfied with what we have, which is sufficient, for he that is so, wants nothing. `,
+      'Life is never incomplete if it is an honorable one. At whatever point you leave life, if you leave it in the right way, it is whole.',
+      'Wealth is the slave of the wise. The master of the fool.',
+      'The bravest sight in the world is to see a great man struggling against adversity.',
+      `It is not that we have so little time but that we lose so much. … The life we receive is not short but we make it so; we are not ill provided but use what we have wastefully.`,
+      'If you really want to escape the things that harass you, what you’re needing is not to be in a different place but to be a different person.',
+      'He suffers more than necessary, who suffers before it is necessary.',
+      'Every night before going to sleep, we must ask ourselves: what weakness did I overcome today? What virtue did I acquire?',
+      'Difficulties strengthen the mind, as labor does the body.',
+      'We are always complaining that our days are few, and acting as though there would be no end of them.',
+      'Associate with people who are likely to improve you.',
+      'Man is affected not by events but by the view he takes of them.',
+      'We suffer more often in imagination than in reality.',
+      'Time heals what reason cannot.',
+      'The greatest blessings of mankind are within us and within our reach. A wise man is content with his lot, whatever it may be, without wishing for what he has not.',
+      'Hang on to your youthful enthusiasms — you’ll be able to use them better when you’re older.',
+      'You act like mortals in all that you fear, and like immortals in all that you desire.',
+      'If a man knows not to which port he sails, no wind is favorable.',
+      'It is not the man who has too little, but the man who craves more, that is poor. ',
+      'It is the power of the mind to be unconquerable.',
+    ]
+  },
+  {
+    title: 'Heraclitus',
+    quotes: [
+      `No man ever steps in the same river twice, for it's not the same river and he's not the same man.`,
+      `A man's character is his fate.`,
+      'Much learning does not teach understanding.',
+      'Nothing endures but change.',
+      'Good character is not formed in a week or a month. It is created little by little, day by day. Protracted and patient effort is needed to develop good character.',
+      'Our envy always lasts longer than the happiness of those we envy.',
+      'Big results require big ambitions.',
+    ],
   }
 ];

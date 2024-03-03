@@ -56,7 +56,6 @@ const displayStories = async () => {
 
 displayStories();
 
-
 // load crypto prices
 
 const loadCrypto = () => {
