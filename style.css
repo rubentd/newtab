@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 body {
   padding: 16px;
@@ -6,17 +6,40 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: radial-gradient(#333 1px, #f7f7f7 1px);
+  background-size: 64px 64px;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-side {
+  padding: 16px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .quote {
-  font-family: 'Noto Sans JP';
-  padding: 16px;
-  width: 50%;
+  font-family: 'Merriweather';
+  line-height: 1.2;
+  color: #333;
+}
+
+#quote_text, #reminder {
+  font-size: 54px;
+  margin-bottom: 16px;
+}
+
+#quote_credit {
+  font-size: 32px;
+  color: #555;
 }
 
 .news {
@@ -37,39 +60,18 @@ body {
   height: 24px;
 }
 
-.decrypt-title {
-  display: flex;
-  align-items: center;
-  margin: 16px 0;
-}
-
-.decrypt-title > img {
-  height: 28px;
-  margin-right: 8px;
-}
-
-.decrypt-title > img:last-child {
-  height: 16px;
-}
-
-#quote_text {
-  font-size: 36px;
-  line-height: 1.2;
-  margin-bottom: 16px;
-  color: #333;
-}
-
-#quote_credit {
-  font-size: 24px;
-  color: #444;
+.reminder-title {
+  color: #555;
+  font-size: 20px;
 }
 
 a {
   color: #333 !important;
+  text-decoration: none;
 }
 
 ul {
-  margin: 8px 0 0 0;
+  margin: 16px 0 0 0;
   padding: 0;
   list-style: none; 
 }
@@ -97,15 +99,6 @@ ul > li > .overlay {
   width: 100%;
 }
 
-.coins {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-}
-
-.coins > div > div:last-child {
-  display: none;
-}
 
 @media (prefers-color-scheme: dark) {
   body {

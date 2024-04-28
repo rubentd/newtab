@@ -1,28 +1,49 @@
 // Display quote
 
+const NEWS_API_KEY = 'SHc1j1x5kUSftAimEtR66pDWM9ulBvARV5oN3hKc'
+const NUMBER_STORIES = 18;
+
+const deleteKeys = (key) => {
+  Object.keys(localStorage)
+    .filter(x => x.startsWith(key))
+    .forEach(x => localStorage.removeItem(x))
+}
+
 const randomInRange = (start, end) => Math.floor(Math.random() * (end - start + 1) + start);
 
-const quoteIndex = randomInRange(0, window.quotes.length - 1);
-const quote = window.quotes[quoteIndex];
+const randomQuote = () => {
+  const todayKey = 'quote_' + new Date().toDateString();
+  const cachedQuote = localStorage.getItem(todayKey);
+  if (cachedQuote) {
+    return JSON.parse(cachedQuote);
+  } else {
+    deleteKeys('quote');
 
-const quoteText = quote.quotes[randomInRange(0, quote.quotes.length - 1)];
- 
-document.getElementById('quote_text').innerHTML = quoteText;
-document.getElementById('quote_credit').innerHTML = quote.title;
+    const plainQuotes = quotes.reduce((acc, quote) => (
+      acc.concat(quote.quotes.map(q => ({
+          title: quote.title,
+          text: q,
+        }
+      )))
+    ), []);
 
-// Load hacker news
+    const randomQuote = plainQuotes[randomInRange(0, plainQuotes.length - 1)];
+    localStorage.setItem(todayKey, JSON.stringify(randomQuote));
+    return randomQuote;
+  }
+}
 
-const loadTopStories = async () => {
+const loadHNTopStories = async () => {
   const response = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json');
   return await response.json();
 }
 
-const loadStory = async (storyId) => {
+const loadHNStory = async (storyId) => {
   const response = await fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json`);
   return await response.json();
 }
 
-const renderStories = (stories) => {
+const renderHNStories = (stories) => {
   document.getElementById('hackernews').innerHTML = '';
   for (let story of stories) {
     document.getElementById('hackernews').innerHTML += `
@@ -34,33 +55,49 @@ const renderStories = (stories) => {
   }
 }
 
-const NUMBER_STORIES = 16;
-
-const displayStories = async () => {
+const getHNStories = async () => {
   const date = new Date();
-  const todayKey = 'stories' + date.toDateString() + date.getHours();
+  const todayKey = 'stories_' + date.toDateString() + date.getHours();
   let stories = [];
   const cacheStories = localStorage.getItem(todayKey);
   if (cacheStories) {
     stories = JSON.parse(cacheStories);
   } else {
-    localStorage.clear();
-    const ids = await loadTopStories();
+    deleteKeys('stories');
+    const ids = await loadHNTopStories();
     for (let i = 0; i < NUMBER_STORIES; i++) {
-      stories.push(await loadStory(ids[i]));
+      stories.push(await loadHNStory(ids[i]));
     }
     localStorage.setItem(todayKey, JSON.stringify(stories));
   }
-  renderStories(stories);
+  return stories;
 }
 
-displayStories();
+function randomReminder() {
+  const todayKey = 'reminder_' + new Date().toDateString();
+  const cachedReminder = localStorage.getItem(todayKey);
+  if (cachedReminder) {
+    return JSON.parse(cachedReminder);
+  } else {
+    deleteKeys('reminder');
 
-// load crypto prices
+    const reminder = window.reminders[randomInRange(0, window.reminders.length - 1)];
+    localStorage.setItem(todayKey, JSON.stringify(reminder));
+    return reminder;
+  }
+}
 
-const loadCrypto = () => {
-  const e = crCryptocoinPriceWidget.init({base:"USD",items:"BTC,ETH",backgroundColor:"FFFFFF",streaming:"1",rounded:"1",boxShadow:"1",border:"1"});
-  document.getElementById('coindata').append(e);
-};
+async function main() {
+  const stories = await getHNStories();
+  renderHNStories(stories);
 
-loadCrypto();
+  const quote = randomQuote();
+  document.getElementById('quote_text').innerHTML = quote.text;
+  document.getElementById('quote_credit').innerHTML = quote.title;
+
+  const reminder = randomReminder();
+  document.getElementById('reminder').innerHTML = reminder;
+}
+
+
+main()
