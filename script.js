@@ -88,15 +88,15 @@ function randomReminder() {
 }
 
 async function main() {
-  const stories = await getHNStories();
-  renderHNStories(stories);
-
   const quote = randomQuote();
   document.getElementById('quote_text').innerHTML = quote.text;
   document.getElementById('quote_credit').innerHTML = quote.title;
 
   const reminder = randomReminder();
   document.getElementById('reminder').innerHTML = reminder;
+
+  const stories = await getHNStories();
+  renderHNStories(stories);
 }
 
 
