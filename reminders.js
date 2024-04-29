@@ -13,4 +13,5 @@ window.reminders = [
   `Don't talk shit about anyone`,
   'Do the hard things first',
   'How you do anything is how you do everything',
+  `Don't be judgemental`,
 ]
