@@ -113,6 +113,7 @@ window.quotes = [
       'Value your time at an hourly rate, and ruthlessly spend to save time at that rate. You will never be worth more than you think you’re worth. ',
       'Ways to get lucky: • Hope luck finds you. • Hustle until you stumble into it. • Prepare the mind and be sensitive to chances others miss. • Become the best at what you do. Refine what you do until this is true. Opportunity will seek you out. Luck becomes your destiny. ',
       'Reading science, math, and philosophy one hour per day will likely put you at the upper echelon of human success within seven years.',
+      'Do what feels like play to you, but looks like work to others',
     ]
   },
   {
