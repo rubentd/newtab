@@ -199,5 +199,14 @@ and lower. To obstruct each other is unnatural. To feel anger at someone, to tur
       'Our envy always lasts longer than the happiness of those we envy.',
       'Big results require big ambitions.',
     ],
+  },
+  {
+    title: 'Ernest Hemingway',
+    quotes: [
+      'The best way to find out if you can trust somebody is to trust them.',
+      'There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self.',
+      'The world breaks everyone, and afterward, some are strong at the broken places.',
+      'Courage is grace under pressure.',
+    ],
   }
 ];
